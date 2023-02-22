@@ -1,0 +1,14 @@
+# Starter pipeline
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'Knect-Admin-EC2'
+    runOptions: 'commands'
+    commands: 'cd ~/MKTV_landing_page/ && git pull origin main 2>&1 && npm run prod 2>&1;'
+    readyTimeout: '20000'

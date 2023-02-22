@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="%PUBLIC_URL%/" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4040C7" />
+    <meta name="theme-color" content="#4040C7" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>MKTV</title>
+  </head>
+  <body style="background: #4040c7">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-------------------- Google Analytics  ------------------------->
+    <!-- Global site tag (gtag.js) - Google Ads: 690957731 -->
+    <script
+      id="gtag"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-690957731"
+    ></script>
+    <script>
+      if (window.location.pathname.split("/").includes("telenor")) {
+        document
+          .getElementById("gtag")
+          .setAttribute(
+            "src",
+            "https://www.googletagmanager.com/gtag/js?id=AW-10884147184"
+          );
+        // <!-- Facebook Pixel Code -->
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = "2.0";
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          "script",
+          "https://connect.facebook.net/en_US/fbevents.js"
+        );
+        fbq("init", "389119693067077");
+        fbq("track", "PageView");
+      }
+      // <!-- Facebook Pixel Code -->
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      let allPaths = window.location.pathname.split("/");
+      if (allPaths.includes("telenor")) {
+        gtag("config", "AW-10884147184");
+      } else {
+        gtag("config", "AW-690957731");
+      }
+    </script>
+    <!-- Event snippet for MKTV Subscribe conversion page -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-690957731/slKUCIjewLADEKPbvMkC",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+    <!-- Event snippet for Subscribe_MuslimKidsTV_13 April 2022 conversion page -->
+    <script>
+      function gtag_report_conversion_telenor() {
+        gtag("event", "conversion", {
+          send_to: "AW-10884147184/wyZPCM_F-rIDEPDP-8Uo",
+        });
+      }
+    </script>
+    <!-- Facebook Pixel Code -->
+
+    <div id="root"></div>
+  </body>
+</html>

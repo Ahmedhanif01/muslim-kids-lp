@@ -1,0 +1,700 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./font/Nunito-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito-simple";
+  src: url("./font/Nunito-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Titillium Web";
+  src: url("./font/TitilliumWeb-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./font/NotoSansArabicUI-ExtraBold.ttf") format("truetype");
+}
+
+body,
+html,
+#root {
+  height: 500px !important;
+  font-family: "Nunito-simple";
+  margin: 0;
+}
+
+.container {
+  max-width: 620px;
+  margin: auto;
+  height: 100vh;
+  color: white;
+  background-image: url("./assets/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centerClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito";
+  line-height: 1.3;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.centerClass.en {
+  font-family: "Nunito";
+}
+.container .ur {
+  font-family: "Noto Sans" !important;
+}
+.ur * {
+  font-family: "Noto Sans";
+}
+.centerClass.ur {
+  font-family: "Noto Sans" !important;
+}
+.font-family-ur {
+  font-family: "Noto Sans";
+}
+.font-family-en {
+  font-family: "Nunito";
+}
+.top-bar {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+}
+
+.top-bar .title {
+  margin: auto;
+}
+
+.top-bar .title {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+.top-bar .language {
+  margin-top: 2%;
+  right: 0;
+  position: absolute;
+  margin-right: 2%;
+}
+
+.top-bar .language img {
+  width: 15px;
+  margin: 0 10px -2px 0;
+}
+
+.logo-bar {
+  min-height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58%;
+}
+
+.logo-bar .logo {
+  margin-top: 12%;
+  object-fit: contain;
+  margin-bottom: 2%;
+}
+
+.logo-bar .moto-1 {
+  color: #f6f7f7;
+  font-size: 3rem;
+}
+
+.logo-bar .moto-1.ur {
+  font-size: 2.2rem;
+}
+
+.logo-bar .moto-2 {
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 37px;
+  line-height: 40px;
+}
+
+.logo-bar .moto-2.ur {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.logo-bar .moto-3 {
+  color: #ffd800;
+  font-size: 1.8rem;
+  width: 436px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 37px;
+  line-height: 40px;
+  margin-bottom: 1%;
+}
+
+.logo-bar .moto-3.ur {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.input-form {
+  margin-top: 4%;
+}
+
+.input-form .label {
+  width: 80%;
+  height: 38px;
+  top: 398px;
+  font-family: "Nunito-simple" !important;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 38px;
+  color: #ffffff;
+  margin: auto;
+  text-align: center;
+}
+
+.input-form .label img {
+  width: 23px;
+  margin: 0 10px -2px 10px;
+  filter: brightness(0) invert(1);
+}
+
+.input-form .input input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+  outline: none;
+  width: 480px;
+  height: 90px;
+  background: #fafafa;
+  border: 4px solid #7272e3;
+  border-radius: 22px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  letter-spacing: 0.04em;
+  color: #bbbbbb;
+}
+
+.input-form .sub-btn button {
+  margin-top: 4%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: -webkit-sticky;
+  width: 410px;
+  height: 90px;
+  background: linear-gradient(180deg, #f6be4b 0%, #e68017 100%);
+  border-radius: 18px;
+}
+.back-button {
+  background-color: #c93535;
+  height: 96px;
+  position: relative;
+  width: 410px;
+  margin: auto;
+  border-radius: 18px !important;
+}
+.input-form .sub-btn.ur button {
+  font-family: "Noto Sans";
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.input-form .sub-btn.en button {
+  font-family: "Nunito" !important;
+  overflow: hidden;
+  font-size: 28px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.price-points-normal {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: pre-wrap;
+  width: 537px;
+  left: 91px;
+  top: 672px;
+  font-family: "Nunito-simple" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  /* line-height: 25px; */
+  display: flex;
+  text-align: center;
+  color: #e6e6e6;
+  justify-content: center;
+}
+.ur .price-points {
+  direction: rtl;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.error.ur {
+  font-family: "Titillium Web";
+  overflow: hidden;
+}
+
+.error.en {
+  font-family: "Nunito-simple" !important;
+  overflow: hidden;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #bbbbbb;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #bbbbbb;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #bbbbbb;
+}
+
+.loader {
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+}
+
+.dummyText {
+  font-family: "Nunito-simple" !important;
+  height: 0px;
+  overflow: hidden;
+}
+
+.dummyTop {
+  background: linear-gradient(
+    1deg,
+    rgba(248, 192, 25, 0) 1.06%,
+    #ffffff 153.83%
+  );
+  height: 50%;
+  position: absolute;
+  width: 98%;
+  right: 1%;
+  z-index: -1;
+  top: 4px;
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+}
+
+.dummyBottom {
+  height: 122%;
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, #f6be4b 0%, #e68017 100%);
+  z-index: -1;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 20%;
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+}
+
+.arrowR {
+  width: 20%;
+  transform: rotate(180deg);
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+}
+
+.continueButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:disabled {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.shine {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 100% 100%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.language-selection {
+  border-radius: 27px;
+  color: #fff;
+  width: 110px;
+  right: 0;
+  top: 20px;
+  border: 0.5px solid #ffffff;
+  overflow: hidden;
+  display: flex;
+}
+
+.language-box {
+  padding: 5px;
+  flex-basis: 50%;
+  text-align: center;
+  font-family: "Nunito-simple" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.language-box:not(:first-child):not(:last-child) {
+  border-left: 0.5px solid #8a0fd9;
+  border-right: 0.5px solid #8a0fd9;
+}
+
+.language-selected {
+  width: 53px;
+  background: #ffffff;
+  border-radius: 105px 0px 0px 105px;
+  color: #4040c7;
+}
+
+/* -------------Responsive CSS------------- */
+@media only screen and (max-width: 720px) {
+  body,
+  html,
+  #root {
+    font-size: 0.7rem;
+  }
+  .container {
+    height: 100%;
+  }
+  .input-form .input input {
+    width: 80vw;
+  }
+  .input-form .sub-btn button {
+    width: 64vw;
+  }
+  .back-button {
+    width: 64vw;
+  }
+  .price-points-normal {
+    width: 78vw;
+  }
+  .container {
+    width: 100vw;
+  }
+  .input-form .label {
+    font-size: 1.6rem;
+  }
+  .logo-bar .moto-3 {
+    width: 62vw;
+    font-size: 3rem;
+  }
+  .logo-bar .moto-2 {
+    width: 66vw;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 546px) {
+  body,
+  html,
+  #root {
+    font-size: 0.6rem;
+    height: 77vh;
+  }
+  .input-form .input input {
+    width: 74vw;
+    height: 8vh;
+    font-size: 2.6rem;
+    margin-top: 8px;
+  }
+  .input-form .sub-btn button {
+    width: 62vw;
+    height: 8vh;
+  }
+  .back-button {
+    width: 62vw;
+    height: 92px;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 2.6rem;
+  }
+  .input-form .sub-btn.ur button {
+    font-size: 2.6rem;
+  }
+  .price-points-normal {
+    width: 76vw;
+    font-size: 1.5rem;
+  }
+  .language-box {
+    font-size: 1.9rem;
+  }
+  .logo-bar .logo {
+    margin-top: 10%;
+    object-fit: contain;
+    margin-bottom: 2%;
+    width: 48vw;
+  }
+}
+@media only screen and (max-width: 470px) {
+  body,
+  html,
+  #root {
+    font-size: 0.6rem;
+  }
+  .input-form .input input {
+    width: 310px;
+    height: 60px;
+    font-size: 2.5rem;
+    margin-top: 8px;
+    border-radius: 16px;
+  }
+  .input-form .sub-btn button {
+    width: 240px;
+    height: 60px;
+  }
+  .back-button {
+    width: 240px;
+    height: 63px;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 2rem;
+    border-radius: 12px;
+  }
+  .input-form .sub-btn.ur button {
+    font-size: 2rem;
+  }
+  .price-points-normal {
+    width: 76vw;
+    font-size: 1.2rem;
+    line-height: 16px;
+  }
+  .language-box {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+  .logo-bar .moto-2 {
+    width: 70vw;
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+  .logo-bar .moto-3 {
+    width: 69vw;
+    font-size: 2.8rem;
+    line-height: 35px;
+  }
+  .language-selection {
+    width: 75px;
+  }
+  .input-form .label img {
+    width: 23px;
+    margin: 0 10px -5px 10px;
+    filter: brightness(0) invert(1);
+  }
+}
+@media only screen and (max-width: 375px) {
+  body,
+  html,
+  #root {
+    font-size: 0.6rem;
+    height: 100vh;
+  }
+  .input-form .input input {
+    width: 275px;
+    height: 60px;
+    font-size: 2.6rem;
+    margin-top: 1px;
+  }
+  .input-form .sub-btn button {
+    width: 210px;
+    height: 60px;
+  }
+  .input-form .label {
+    width: 305px;
+    font-size: 1.6rem;
+    font-weight: 100;
+  }
+  .input-form .label img {
+    width: 20px;
+    margin: 0 7px -6px 7px;
+    filter: brightness(0) invert(1);
+  }
+  .back-button {
+    width: 210px;
+    height: 63px;
+    position: relative;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 2.6rem;
+  }
+  .input-form .sub-btn.ur button {
+    font-size: 2.6rem;
+  }
+  .price-points-normal {
+    width: 76vw;
+    font-size: 1.2rem;
+    line-height: 16px;
+  }
+  .language-box {
+    font-size: 1.2rem;
+    padding: 0px;
+    line-height: 25px;
+  }
+  .logo-bar .moto-2 {
+    font-size: 2.2rem;
+    line-height: 35px;
+    font-weight: bolder;
+  }
+  .logo-bar .moto-3 {
+    font-size: 2.2rem;
+    line-height: 35px;
+    font-weight: bolder;
+  }
+
+  .input-form .input input {
+    font-size: 2rem;
+    border-radius: 16px;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 1.6rem;
+    border-radius: 12px;
+  }
+  .input-form .sub-btn.ur button {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  body,
+  html,
+  #root {
+    font-size: 0.6rem;
+    height: 100vh;
+  }
+  .input-form .input input {
+    width: 220px;
+    height: 45px;
+  }
+  .input-form .sub-btn button {
+    width: 170px;
+    height: 42px;
+    border-radius: 7px;
+  }
+  .input-form .label {
+    width: 280px;
+    font-size: 1.3rem;
+    font-weight: 100;
+  }
+  .input-form .label img {
+    width: 17px;
+    margin: 0 7px -4px 7px;
+  }
+  .back-button {
+    width: 169px;
+    height: 45px;
+    border-radius: 13px !important;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 2.6rem;
+  }
+  .input-form .sub-btn.ur button {
+    font-size: 2.6rem;
+  }
+  .price-points-normal {
+    width: 71vw;
+    font-size: 1rem;
+  }
+  .language-box {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .logo-bar .moto-2 {
+    margin-top: 2%;
+    font-size: 2rem;
+    width: 208px;
+    line-height: 30px;
+  }
+  .logo-bar .moto-3 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+
+  .input-form .input input {
+    font-size: 1.4rem;
+    border-radius: 15px;
+  }
+  .input-form .sub-btn.en button {
+    font-size: 1.4rem;
+  }
+}
+/* surface duo */
+@media only screen and (width: 540px) and (height: 720px) {
+  .back-button {
+    width: 62vw;
+    height: 64px;
+  }
+}
